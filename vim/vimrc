@@ -33,7 +33,7 @@ NeoBundle 'scrooloose/syntastic'
 NeoBundle 'myusuf3/numbers.vim'
 NeoBundle 'msanders/snipmate.vim'
 NeoBundle 'tristen/vim-sparkup'
-NeoBundle 'tsaleh/vim-supertab'
+"NeoBundle 'tsaleh/vim-supertab'
 NeoBundle 'tpope/vim-abolish'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'tpope/vim-commentary'
@@ -92,7 +92,7 @@ set sidescroll=1
 set sidescrolloff=10
 
 "Set font type and size. Depends on the resolution. Larger screens, prefer h20
-set guifont=Inconsolata\ for\ Powerline:h16
+set guifont=Inconsolata\ for\ Powerline:h14
 let g:airline_enable_branch=1
 let g:airline_enable_syntastic=1
 let g:airline_powerline_fonts=1
@@ -128,7 +128,7 @@ colorscheme solarized
 " tabs and spaces
 set expandtab
 set smarttab
-set tabstop=8
+set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 au BufNewFile,BufReadPost *.css,*.html,*.mako,*.rb,*.erb,*.coffee,*.js,*.json set shiftwidth=2
@@ -151,7 +151,7 @@ set foldlevel=0
 
 "Better line wrapping
 set wrap
-set textwidth=80
+"set textwidth=80
 set formatoptions=qrn1
 
 " search

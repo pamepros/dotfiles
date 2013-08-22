@@ -49,7 +49,7 @@ zstyle ':prezto:load' pmodule \
 #
 
 # Set the key mapping style to 'emacs' or 'vi'.
-zstyle ':prezto:module:editor' keymap 'vi'
+# zstyle ':prezto:module:editor' keymap 'vi'
 
 # Auto convert .... to ../..
 zstyle ':prezto:module:editor' dot-expansion 'yes'
@@ -162,5 +162,3 @@ export VISUAL=vim
 export EDITOR=vi
 bindkey '\e.' insert-last-word
 
-# load RVM into a shell session.
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
