@@ -1,0 +1,14 @@
+enter ~/Projects/Blameless/blamo
+  workon blamo
+
+enter ~/Projects/Blameless/logger
+  workon logger
+
+enter ~/Projects/Blameless/blameless_bot
+  workon blameless_bot
+
+enter ~/Projects/Blameless/helm-vars
+  workon helm-vars
+
+leave ~/Projects/Blameless/blamo:~/Projects/Blameless/blameless_bot:~/Projects/Blameless/logger:~/Projects/Blameless/helm-vars
+  deactivate > /dev/null 2>&1
