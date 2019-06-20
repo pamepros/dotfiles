@@ -59,11 +59,7 @@ class Installation(object):
         os.system("%s %s %s" % (installer, extras, package))
 
     def pip_install(self, package, upgrade=True):
-        for pip_binary in ['pip3', 'pip', 'pip2']:
-            if shutil.which(pip_install):
-                break
-        else:
-            raise Exception("No pip available")
+	pip_binary = '/usr/local/bin/pip'
 
         os.system("{} install --user {} {}".format(
             pip_binary, "--upgrade" if upgrade else "", package))

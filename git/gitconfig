@@ -1,6 +1,6 @@
 [user]
-  name = Santiago Suarez Ordoñez
-  email = santiycr@gmail.com
+  name = Pamela Prosperi
+  email = pamepros@gmail.com
 [color]
   diff = auto
   status = auto
@@ -17,8 +17,7 @@
 [apply]
   whitespace = nowarn
 [github]
-  user = santiycr
-  password = !security 2>&1 >/dev/null find-generic-password -gs github.password | ruby -e 'print $1 if STDIN.gets =~ /^password: \\\"(.*)\\\"$/'
+  user = pamepros
 [core]
   autocrlf = input
   editor = nvim
