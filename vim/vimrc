@@ -64,7 +64,7 @@ au VimResized * :wincmd =
 " tabs and spaces
 set expandtab
 set smarttab
-set tabstop=4
+set tabstop=8
 set softtabstop=4
 set shiftwidth=4
 au BufNewFile,BufReadPost *.css,*.html,*.mako,*.rb,*.erb,*.coffee,*.js,*.json set shiftwidth=2
@@ -87,7 +87,7 @@ set foldlevel=0
 
 "Better line wrapping
 set wrap
-"set textwidth=80
+set textwidth=80
 set formatoptions=qrn1
 
 " search
