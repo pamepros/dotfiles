@@ -128,29 +128,6 @@ class CaskInstallation(Installation):
         self.tap('caskroom/cask')
 
 
-class NeoVimInstallation(Installation):
-    NAME = "neovim"
-    DEPENDENCIES = ['lint', 'git', 'cask', 'autoformat']
-
-    def steps(self):
-        if platform.system() == 'Darwin':
-            self.tap('neovim/neovim')
-            self.tap('caskroom/fonts')
-            self.cask_install('font-inconsolata-nerd-font')
-        self.install('neovim')
-        self.install('grip') # used by markdown-preview
-        self.pip_install('neovim')
-        self.safe_mkdir('.config')
-        self.safe_ln('vim', '.config/nvim')
-        self.safe_ln('vim/vimrc', '.config/nvim/init.vim')
-        self.safe_mkdir('.config/nvim/tmp/swap')
-        self.safe_mkdir('.config/nvim/tmp/undo')
-        self.safe_mkdir('.config/nvim/tmp/backup')
-        os.system('curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs '
-                  'https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim')
-        os.system('nvim +PlugInstall +qall')
-
-
 class autoformatInstallation(Installation):
     NAME = "autoformat"
 
@@ -159,15 +136,6 @@ class autoformatInstallation(Installation):
         self.pip_install('autopep8')
         self.pip_install('js-beautify')
         self.pip_install('remark-cli')
-
-
-class VimrInstallation(Installation):
-    NAME = "vimr"
-    DEPENDENCIES = ['neovim']
-
-    def steps(self):
-        if platform.system() == 'Darwin':
-            self.cask_install('vimr')
 
 
 class HammerspoonInstallation(Installation):
